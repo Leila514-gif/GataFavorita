@@ -7,6 +7,11 @@
 #joaqui:checked~#ok{display:block}
 #toti:checked~#error,#piki:checked~#error,#mari:checked~#error{display:block}
 #toti:checked~#foto,#piki:checked~#foto,#mari:checked~#foto{display:block}
+#cacas{
+display:none; position: fixed; top: 0; left: 0;
+width: 100vw; height: 100vh; pointer-events: none;}
+#toti:checked ~ #cacas, #piki:checked ~ #cacas, #mari:checked ~ #cacas{display:block}
+#cacas span{ position: absolute; top: -30px; font-size: 24px; animation: caer 3s linear infinite;}
 #corazones{
 display:none;
 position: fixed;
@@ -48,6 +53,10 @@ animation: caer 3s linear infinite;
 <div id="corazones">
 <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
 <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
+</div>
+<div id="cacas">
+    <span>💩</span><span>💩</span><span>💩</span><span>💩</span><span>💩</span><span>💩</span><span>💩</span>
+     <span>💩</span><span>💩</span><span>💩</span><span>💩</span><span>💩</span><span>💩</span><span>💩</span>
 </div>
 <p id="error">ERROR: ESA NO ES TU GATA FAVORITA</p>
 <p id="ok">GRACIAS POR VOTAR POR JOAQUI</p>
