@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Gata Favorita</title>
+<style>
+#error,#ok,#foto{display:none;font-weight:bold;margin-top:15px}
+#error{color:red} #ok{color:green}
+#joaqui:checked~#ok{display:block}
+#toti:checked~#error,#piki:checked~#error,#mari:checked~#error{display:block}
+#toti:checked~#foto,#piki:checked~#foto,#mari:checked~#foto{display:block}
+</style>
+</head>
+<body>
+<h2>¿Quien es tu gata favorita? 🐱</h2>
+<form>
+<input type="radio" name="g" id="joaqui"><label for="joaqui"> Joaqui</label><br>
+<input type="radio" name="g" id="toti"><label for="toti"> Toti</label><br>
+<input type="radio" name="g" id="piki"><label for="piki"> Piki</label><br>
+<input type="radio" name="g" id="mari"><label for="mari"> Mari</label><br>
+<p id="error">ERROR: ESA NO ES TU GATA FAVORITA</p>
+<p id="ok">GRACIAS POR VOTAR POR JOAQUI</p>
+<img id="foto" src="Joaqui.jpeg" width="300">
+</form>
+</body>
+</html>
